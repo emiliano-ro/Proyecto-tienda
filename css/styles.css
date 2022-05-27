@@ -1,0 +1,1180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ELEMENTOS GENERALES */
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid white;
+}
+
+.xd {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1rem solid white;
+}
+
+
+ul {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 0.1rem solid white;
+}
+
+.flxLinea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flxColumna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.spAround {
+    justify-content: space-around;
+}
+
+.fitcontentCaja {
+    height: fit-content;
+    width: fit-content;
+}
+
+/* !!! HEADER !!! */
+
+.logo {
+    display: flex;
+    max-width: 24rem;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 1.2rem;
+}
+
+.logo2 {
+    display: flex;
+    max-width: 5.5rem;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin-left: 7.5rem;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 1.2rem;
+}
+
+.hletra li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke: 0.2rem rgba(43, 61, 226, 0.712);
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+header ul li:hover a{
+    transform: scale(150%);
+}
+
+body div#clicklogo img:hover {
+    display: flex;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #0294f5c5, 0 0 10px 2px #0dbff598, 0 0 10px 2px #05a5fb96, 0 0 10px 2px #2df9fd98;
+}
+
+/* !! FONDOS - BACKGROUND !! */
+
+.dfondo {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/fondo5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh;
+}
+
+.dfondo2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/fondocf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh;
+}
+
+.dfondo3 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/fondo6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh;
+}
+
+/* COLORES VARIOS */
+
+.cblanco {
+    color: white;
+}
+
+/* !! MAIN INDEX !! */
+
+.iCaja div {
+    display: flex;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.342);
+    border: 2px solid white;
+    padding: 10px;
+    height: auto;
+    width: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.iTamaño iframe {
+    width: 390px;
+    height: 540px;
+}
+
+/* INDEX GRIDS */
+
+.index__grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+        "e1 e2"
+        "e3 e4";
+    width: 100%;
+    grid-gap: 15px;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.index__item1 {
+    grid-area: e1;
+}
+
+.index__item2 {
+    grid-area: e2;
+}
+
+.index__item3 {
+    grid-area: e3;
+}
+
+.index__item4 {
+    grid-area: e4;
+}
+
+
+/* ELEMENTOS FIJOS - ICONO WHATSAPP INSTAGRAM - ICONOS FONTAWESOME*/
+
+.logowp {
+    font-size: 3rem;
+    color: rgb(77, 240, 45);
+    right: 2rem;
+    bottom: 1rem;
+    position: fixed;
+}
+
+.logoig {
+    bottom: 1rem;
+    right: 6rem;
+    position: fixed;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+/* BOX MODELING - MOMENTANEO */
+
+.titulo section h1 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.box1 {
+    border: 4px solid red;
+    margin: 1rem;
+    padding: 20px;
+    color: blue;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box2 {
+    background-color: white;
+    width: 40rem;
+    height: 30rem;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: scroll;
+    border: 5px dashed greenyellow;
+    padding: 2rem;
+}
+
+section ul#boxLi li {
+    display: inline-block;
+    border: 2px groove yellow;
+    font-size: 8rem;
+    color: red;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* tienda.html */
+
+.stienda {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tNav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.274);
+    height: 100%;
+    border: 2px solid white;
+    justify-content: center;
+}
+
+.aCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.liFondo {
+    background: rgba(0, 0, 0, 0.336);
+}
+
+.eTexto a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px;
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nuLi ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.efecto ul li a:hover{
+}
+
+.tsLi ul li:hover{
+    text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
+}
+
+.dMenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.336);
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+}
+
+.sTexto ul a {
+    line-height: 100%;
+    padding: 1rem 15px;
+}
+
+.dLi li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.bTitulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.eTitulo h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 2rem;
+}
+
+.catag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.342);
+    border: 2px solid white;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.producto__imagen {
+    display: flex;
+    height: auto;
+    width: 300px;
+}
+
+.producto__desc {
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+}
+
+.producto__titulo {
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+    padding: 2rem;
+}
+
+.producto__precio {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+}
+
+.producto__cbtn {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 3%;
+}
+
+.tienda__grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "e1 e2 e3 e4"
+        "e5 e6 e7 e8"
+        "e9 e10 e11 e12";
+    width: 100%;
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.tienda__i1 {
+    grid-area: e1;
+}
+
+.tienda__i2 {
+    grid-area: e2;
+}
+
+.tienda__i3 {
+    grid-area: e3;
+}
+
+.tienda__i4 {
+    grid-area: e4;
+}
+
+.tienda__i5 {
+    grid-area: e5;
+}
+
+.tienda__i6 {
+    grid-area: e6;
+}
+
+.tienda__i7 {
+    grid-area: e7;
+}
+
+.tienda__i8 {
+    grid-area: e8;
+}
+
+.tienda__i9 {
+    grid-area: e9;
+}
+
+.tienda__i10 {
+    grid-area: e10;
+}
+
+.tienda__i11 {
+    grid-area: e11;
+}
+
+.tienda__i12 {
+    grid-area: e12;
+}
+
+section > div.tienda__i1:hover,
+section > div.tienda__i2:hover,
+section > div.tienda__i3:hover,
+section > div.tienda__i4:hover,
+section > div.tienda__i5:hover,
+section > div.tienda__i6:hover,
+section > div.tienda__i7:hover,
+section > div.tienda__i8:hover,
+section > div.tienda__i9:hover,
+section > div.tienda__i10:hover,
+section > div.tienda__i11:hover,
+section > div.tienda__i12:hover{
+    transform: scale(105%);
+}
+
+.aTiempo{
+    transition: all 100ms;
+}
+
+
+
+/* LOGIN */
+
+
+.login__formato {
+    margin-top: 8rem;
+    margin-bottom: 0;
+    border: 3px solid #f1f1f1;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.login__input input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login__btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.login__btnh button:hover {
+    opacity: 1.1;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.fTexto label {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    -webkit-text-stroke: 0.09rem rgba(43, 61, 226, 0.712);
+}
+
+.centrarF {
+    margin: 5% auto;
+}
+
+/* contacto.html */
+
+.lfTexto label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.principal {
+    display: block;
+    margin: 0 auto;
+    width: 510px;
+    color: #666666;
+    font-family: Arial;
+}
+
+.fcTamaño {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.fcTamInp input,
+textarea {
+    width: 380px;
+    height: 27px;
+    background-color: #666666;
+    border: 2px solid #f6f6f6;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.fcTexto {
+    height: 150px;
+}
+
+#submit {
+    width: 85px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cCaja {
+    height: fit-content;
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.164);
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.cTexto {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color: white;
+    word-spacing: 1rem;
+    text-align: left;
+    text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
+}
+
+/* Tienda responsive */
+
+i#md{
+    display: none;
+}
+
+/* MEDIA QUERYS */
+
+
+@media screen and (max-width: 925px){
+
+    .index__grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "e1"
+            "e2"
+            "e3"
+            "e4";
+        width: 100%;
+        grid-gap: 15px;
+        justify-items: center;
+    }
+    
+    header{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .tienda__grilla{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "e1 e2 e3"
+            "e4 e5 e6"
+            "e7 e8 e9"
+            "e10 e11 e12";
+        grid-gap: 15px;
+        justify-items: center;
+    }
+
+    .producto__imagen {
+        display: flex;
+        height: auto;
+        width: 220px;
+    }
+    
+    .producto__desc {
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 220px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+        padding: 2rem;
+    }
+
+    .logo{
+        grid-area: logo1;
+        width: 16rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .hletra li a{
+        font-size: 1rem;
+    }
+    
+    .tNav,
+    .logo2,
+    .logoig{
+        display: none;
+    }
+
+    .logowp{
+        display: none;
+    }
+
+    .mDes{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.274);
+        height: 100%;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.8rem;
+        padding: 6px 0 6px 0;
+        text-align: center;
+    }
+
+    .bTitulo{
+        justify-content: center;
+    }
+
+    .bTitulo h1{
+        font-size: 2rem;
+    }
+
+    .stienda{
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1080px) and (min-width: 925px){
+
+    .tienda__grilla{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "e1 e2 e3"
+            "e4 e5 e6"
+            "e7 e8 e9"
+            "e10 e11 e12";
+        grid-gap: 15px;
+        justify-items: center;
+    }
+
+    .producto__imagen {
+        display: flex;
+        height: auto;
+        width: 270px;
+    }
+    
+    .producto__desc {
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 270px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.6rem;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+        padding: 2rem;
+    }
+
+    .logo{
+        grid-area: logo1;
+        width: 16rem;
+        height: auto;
+        margin: 0 0 0 5rem;
+    }
+
+    .menu li{
+        margin-right: 1rem;
+    }
+
+    .hletra li a{
+        font-size: 1rem;
+    }
+    
+    .tNav,
+    .logo2,
+    .logoig,
+    .logowp{
+        display: none;
+    }
+
+    .mDes{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.274);
+        height: 100%;
+        border: 2px solid white;
+        color: white;
+        font-size: 2.5rem;
+        padding: 6px 0 6px 0;
+        text-align: center;
+    }
+
+    .bTitulo{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 620px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .tienda__grilla{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "e1 e2 e3"
+            "e4 e5 e6"
+            "e7 e8 e9"
+            "e10 e11 e12";
+        grid-gap: 8px;
+        justify-items: center;
+    }
+
+    .producto__imagen {
+        display: flex;
+        height: auto;
+        width: 150px;
+    }
+    
+    .producto__desc {
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 150px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+        padding: 1rem;
+    }
+
+    .producto__precio {
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+    }
+
+    .producto__cbtn {
+        border: none;
+        color: white;
+        padding: 3px 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: green;
+        border-radius: 3%;
+    }
+
+    .logo{
+        grid-area: logo1;
+        width: 16rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .hletra li a{
+        font-size: 1rem;
+    }
+    
+    .tNav,
+    .logo2,
+    .logoig{
+        display: none;
+    }
+
+    .logowp{
+        display: none;
+    }
+
+    .mDes{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.274);
+        height: 100%;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.2rem;
+        padding: 3px 0 3px 0;
+        text-align: center;
+    }
+
+    .bTitulo{
+        justify-content: center;
+    }
+
+    .stienda{
+        margin-top: 0.2rem;
+    }
+
+    .eTitulo h1{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 555px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .tienda__grilla{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "e1 e2"
+            "e3 e4"
+            "e5 e6"
+            "e7 e8"
+            "e9 e10"
+            "e11 e12";
+        grid-gap: 8px;
+        justify-items: center;
+    }
+
+    .producto__imagen {
+        display: flex;
+        height: auto;
+        width: 200px;
+    }
+    
+    .producto__desc {
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 200px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.4rem;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+        padding: 1rem;
+    }
+
+    .producto__precio {
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+    }
+
+    .producto__cbtn {
+        border: none;
+        color: white;
+        padding: 3px 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: green;
+        border-radius: 3%;
+    }
+
+    .logo{
+        grid-area: logo1;
+        width: 16rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .hletra li a{
+        font-size: 1rem;
+    }
+    
+    .tNav,
+    .logo2,
+    .logoig{
+        display: none;
+    }
+
+    .logowp{
+        display: none;
+    }
+
+    .mDes{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.274);
+        height: 100%;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.2rem;
+        padding: 3px 0 3px 0;
+        text-align: center;
+    }
+
+    .bTitulo{
+        justify-content: center;
+    }
+
+    .stienda{
+        margin-top: 0.2rem;
+    }
+
+    .eTitulo h1{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 620px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .tienda__grilla{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "e1 e2 e3"
+            "e4 e5 e6"
+            "e7 e8 e9"
+            "e10 e11 e12";
+        grid-gap: 15px;
+        justify-items: center;
+    }
+
+    .producto__imagen {
+        display: flex;
+        height: auto;
+        width: 170px;
+    }
+    
+    .producto__desc {
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 170px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+        padding: 1rem;
+    }
+
+    .producto__precio {
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+    }
+
+    .producto__cbtn {
+        border: none;
+        color: white;
+        padding: 3px 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: green;
+        border-radius: 3%;
+    }
+
+    .logo{
+        grid-area: logo1;
+        width: 16rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .hletra li a{
+        font-size: 1rem;
+    }
+    
+    .tNav,
+    .logo2,
+    .logoig{
+        display: none;
+    }
+
+    .logowp{
+        display: none;
+    }
+
+    .mDes{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.274);
+        height: 100%;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.2rem;
+        padding: 3px 0 3px 0;
+        text-align: center;
+    }
+
+    .bTitulo{
+        justify-content: center;
+    }
+
+    .stienda{
+        margin-top: 0.2rem;
+    }
+
+    .eTitulo h1{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "l1"
+        "l2";
+        justify-items: center;
+    }
+    
+    .logo{
+        grid-area: l1;
+    }
+    
+    div > ul.menu{
+        grid-area: l2;
+    }
+
+    .hletra li a{
+        font-size: 0.8rem;
+    }
+}
