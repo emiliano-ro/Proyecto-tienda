@@ -321,9 +321,6 @@ section ul#boxLi li {
     padding: 0;
 }
 
-.efecto ul li a:hover{
-}
-
 .tsLi ul li:hover{
     text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
 }
