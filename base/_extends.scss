@@ -1,0 +1,18 @@
+
+// FONDO
+
+%fondoProps{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    min-height: 100vh;
+}
+
+// TIENDA
+
+%tiendaProps{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 7px #000000;
+}

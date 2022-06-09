@@ -1,0 +1,26 @@
+{
+  "name": "web-tienda---emiliano-rosales",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petroo12/Proyecto-tienda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petroo12/Proyecto-tienda/issues"
+  },
+  "homepage": "https://github.com/petroo12/Proyecto-tienda#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

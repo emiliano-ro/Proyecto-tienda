@@ -1,0 +1,159 @@
+.stienda {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tNav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.274);
+    height: 100%;
+    border: 2px solid white;
+    justify-content: center;
+}
+
+.aCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.liFondo {
+    background: rgba(0, 0, 0, 0.336);
+}
+
+.eTexto a {
+    display: flex;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nuLi ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.tsLi ul li:hover {
+    text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
+}
+
+.dMenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.336);
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+}
+
+.sTexto ul a {
+    line-height: 100%;
+    padding: 1rem 15px;
+}
+
+.dLi li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.bTitulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.eTitulo h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 2rem;
+}
+
+.producto {
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.342);
+    border: 2px solid rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+}
+
+.producto__imagen {
+    display: flex;
+    height: auto;
+    width: 18.75rem;
+}
+
+.producto__desc {
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 18.75rem;
+    height: fit-content;
+    text-align: center;
+}
+
+.producto__titulo {
+    padding: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    @extend %tiendaProps;
+}
+
+.producto__precio {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    @extend %tiendaProps;
+}
+
+.producto__cbtn {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 3%;
+}
+
+
+
+section > div > div.anim:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+nav ul li:hover {
+    transform: scale(103%);
+}
+
+.aTiempo {
+    transition: all 150ms;
+}
+
+.tOverflow {
+    text-overflow: ellipsis;
+}

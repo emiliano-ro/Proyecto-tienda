@@ -1,0 +1,149 @@
+.dfondo3, .dfondo2, .dfondo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  min-height: 100vh;
+}
+
+.iCaja {
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.342);
+  border: 2px solid white;
+  padding: 1.12rem 0.625rem 0.625rem 0.625rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.index__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+}
+
+.index__item {
+  display: flex;
+}
+
+.iCaja {
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.342);
+  border: 2px solid white;
+  padding: 1.12rem 0.625rem 0.625rem 0.625rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.index__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+}
+
+.index__item {
+  display: flex;
+}
+
+/* !!! RESETS !!! */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* !!! HEADER !!! */
+.logo {
+  display: flex;
+  max-width: 24rem;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left: 1.2rem;
+}
+
+.logo2 {
+  display: flex;
+  max-width: 5.5rem;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  flex-wrap: wrap;
+  margin-left: 7.5rem;
+}
+
+header {
+  background-color: black;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid white;
+  box-sizing: unset;
+}
+header li {
+  display: inline;
+  margin-right: 1.2rem;
+}
+header li a {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+body div#clicklogo img:hover {
+  display: flex;
+  font-size: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(2, 148, 245, 0.7725490196), 0 0 10px 2px rgba(13, 191, 245, 0.5960784314), 0 0 10px 2px rgba(5, 165, 251, 0.5882352941), 0 0 10px 2px rgba(45, 249, 253, 0.5960784314);
+  transition: all 200ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* !!! FONDOS !!! */
+.dfondo {
+  background-image: url(../images/fondo5.jpg);
+}
+
+.dfondo2 {
+  background-image: url(../images/fondocf.jpg);
+}
+
+.dfondo3 {
+  background-image: url(../images/fondo6.jpg);
+}
+
+/* !!! ELEMENTOS FIJOS !!! */
+.logowp {
+  font-size: 3rem;
+  color: rgb(77, 240, 45);
+  right: 2rem;
+  bottom: 1rem;
+  position: fixed;
+}
+
+.logoig {
+  bottom: 1rem;
+  right: 6rem;
+  position: fixed;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+div > i.logowp:hover,
+div > a:hover > img.logoig {
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
