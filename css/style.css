@@ -421,6 +421,12 @@ div > a:hover > img.logoig {
   cursor: pointer;
 }
 
+.footergeneral {
+  background-color: black;
+  border-top: 1px solid white;
+  color: white;
+}
+
 i#md {
   display: none;
 }
