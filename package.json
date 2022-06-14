@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petroo12/Proyecto-tienda.git"
+    "url": "git+https://github.com/emiliano-ro/Proyecto-tienda.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/petroo12/Proyecto-tienda/issues"
+    "url": "https://github.com/emiliano-ro/Proyecto-tienda/issues"
   },
-  "homepage": "https://github.com/petroo12/Proyecto-tienda#readme",
+  "homepage": "https://github.com/emiliano-ro/Proyecto-tienda#readme",
   "description": "",
   "dependencies": {
     "sass": "^1.52.3"

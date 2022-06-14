@@ -1,11 +1,11 @@
-@import"../base/extends";
-@import"../base/mapas";
-@import"../base/listas";
-@import"../base/variables";
-@import"../componentes/index";
-@import "../componentes/contacto";
-@import "../componentes/micuenta";
-@import "../componentes/index";
+@import"../scss/base/extends";
+@import"../scss/base/mapas";
+@import"../scss/base/listas";
+@import"../scss/base/variables";
+@import"../scss/componentes/index";
+@import "../scss/componentes/contacto";
+@import "../scss/componentes/micuenta";
+@import "../scss/componentes/tienda";
 
 /* !!! RESETS !!! */
 
@@ -69,6 +69,11 @@ a{
     text-decoration: none;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 /* !!! FONDOS !!! */
 
 .dfondo {
@@ -111,4 +116,304 @@ div > a:hover > img.logoig{
     cursor: pointer;
 }
 
+// OTROS
 
+i#md {
+    display: none;
+}
+
+iframe#iIndex{
+    margin-left: calc(50% - 175px);
+    margin-left: -webkit-calc(50% - 175px);
+    margin-left: -moz-calc(50% - 175px);
+}
+
+iframe#iIndex{
+    margin-left: 0;
+    width: 100%;
+}
+
+
+.flxLinea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flxColumna {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: 20rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .producto__imagen {
+        width: 15.75rem;
+    }
+
+    .producto__desc {
+        width: 15.75rem;
+    }
+
+    iframe#iIndex{
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: 20rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .producto__imagen {
+        width: 12.75rem;
+    }
+
+    .producto__desc {
+        width: 12.75rem;
+    }
+
+    .eTitulo h1 {
+        font-size: 1.9rem;
+    }
+
+    .eTexto a {
+        font-size: 1rem;
+    }
+
+    .hletra li a {
+        font-size: 1.1rem;
+    }
+
+    .flxLinea {
+        flex-wrap: wrap-reverse;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    iframe#iIndex{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .producto__titulo {
+        font-size: 1.1rem;
+    }
+
+    .producto__cbtn {
+        font-size: 0.8rem;
+    }
+
+    .eTitulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .eTexto a {
+        font-size: 0.8rem;
+    }
+
+    .hletra li a {
+        font-size: 1rem;
+    }
+
+    iframe#mapa{
+        width: 451px;
+        height: 338px;
+    }
+
+}
+
+@media screen and (max-width: 628px) {
+
+    header {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: 16rem;
+        height: auto;
+        margin-bottom: 1.3rem;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .eTitulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .eTexto a {
+        font-size: 0.8rem;
+    }
+
+    .producto__titulo {
+        font-size: 1.2rem;
+    }
+
+    .producto__cbtn {
+        font-size: 0.5rem;
+    }
+
+    iframe#iIndex{
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .eTitulo h1 {
+        font-size: 1.6rem;
+    }
+
+    .producto__imagen {
+        width: 10.75rem;
+    }
+
+    .producto__desc {
+        width: 10.75rem;
+    } 
+
+    .producto__titulo {
+        font-size: 1rem;
+    }
+
+    .producto__cbtn {
+        font-size: 0.7rem;
+    }
+
+    .hletra li a {
+        font-size: 0.8rem;
+    }
+
+    iframe#iIndex{
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid white;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .eTitulo h1 {
+        font-size: 1.4rem;
+    }
+
+    .producto__imagen {
+        width: 10rem;
+    }
+
+    .producto__desc {
+        width: 10rem;
+    } 
+
+    .producto__titulo {
+        font-size: 0.8rem;
+    }
+
+    .producto__cbtn {
+        font-size: 0.6rem;
+    }
+
+    .producto__precio {
+        font-size: 0.6rem;
+    }
+
+    .hletra li a {
+        font-size: 0.8rem;
+    }
+
+    iframe#iIndex{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    iframe#mapa{
+        width: 334px;
+        height: 250px;
+    }
+
+    .lfTexto label {
+        font-size: 1.2rem;
+    }
+
+    .fcTamInp input,
+    textarea {
+        width: 280px;
+        height: 10px;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+        box-sizing: unset;
+    }
+    
+    .fcTamaño {
+        width: 310px;
+    }
+
+}
