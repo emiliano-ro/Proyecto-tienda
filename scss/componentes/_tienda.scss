@@ -1,71 +1,3 @@
-// .stienda {
-//     height: fit-content;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .tNav {
-//     @extend %flxwraprow;
-//     flex: 1;
-//     background-color: rgba(255, 255, 255, 0.274);
-//     height: 100%;
-//     border: 2px solid white;
-//     justify-content: center;
-// }
-
-// .aCajas {
-//     @extend %flxwraprow;
-//     justify-content: center;
-//     padding: 0;
-//     margin-bottom: 0;
-// }
-
-// .liFondo {
-//     background: rgba(0, 0, 0, 0.336);
-// }
-
-// .eTexto a {
-//     display: flex;
-//     color: white;
-//     font-weight: 400;
-//     padding: 10px;
-//     font-family: "Georgia, 'Times New Roman', Times, serif";
-//     font-size: 1.2rem;
-//     text-transform: uppercase;
-//     letter-spacing: 1px;
-// }
-
-// .nuLi ul li {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     position: relative;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// .tsLi ul li:hover {
-//     text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
-// }
-
-// .dMenu ul {
-//     display: none;
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     background: rgba(0, 0, 0, 0.336);
-//     padding: 0;
-//     border: 1px solid rgb(255, 255, 255);
-//     width: auto;
-//     height: auto;
-// }
-
-// .sTexto ul a {
-//     line-height: 100%;
-//     padding: 1rem 15px;
-// }
-
 .stienda {
     height: fit-content;
     width: 100%;
@@ -74,9 +6,7 @@
 }
 
 .tNav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @extend %flxwraprow;
     flex: 1;
     background-color: rgba(255, 255, 255, 0.274);
     height: 100%;
@@ -85,9 +15,7 @@
 }
 
 .aCajas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @extend %flxwraprow;
     justify-content: center;
 }
 
@@ -159,8 +87,6 @@
 
 .producto__imagen {
     display: flex;
-    height: auto;
-    width: 18.75rem;
 }
 
 .producto__desc {
@@ -217,4 +143,9 @@ nav ul li:hover {
 
 .tOverflow {
     text-overflow: ellipsis;
+}
+
+.tienda-section{
+    width: 80%;
+    margin: 0 auto;
 }

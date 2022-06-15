@@ -1,11 +1,11 @@
-@import"../scss/base/extends";
-@import"../scss/base/mapas";
-@import"../scss/base/listas";
-@import"../scss/base/variables";
-@import"../scss/componentes/index";
-@import "../scss/componentes/contacto";
-@import "../scss/componentes/micuenta";
-@import "../scss/componentes/tienda";
+@import"./scss/base/extends";
+@import"./scss/base/mapas";
+@import"./scss/base/listas";
+@import"./scss/base/variables";
+@import"./scss/componentes/index";
+@import "./scss/componentes/contacto";
+@import "./scss/componentes/micuenta";
+@import "./scss/componentes/tienda";
 
 /* !!! RESETS !!! */
 
@@ -18,7 +18,6 @@
 
 .logo {
     display: flex;
-    max-width: 24rem;
     height: auto;
     flex-wrap: wrap;
     margin-left: 1.2rem;
@@ -26,7 +25,6 @@
 
 .logo2 {
     display: flex;
-    max-width: 5.5rem;
     border: 0.5px solid black;
     border-radius: 50%;
     flex-wrap: wrap;
@@ -106,8 +104,6 @@ ul{
     bottom: 1rem;
     right: 6rem;
     position: fixed;
-    width: 2.8rem;
-    height: 2.8rem;
 }
 
 div > i.logowp:hover,
@@ -155,7 +151,24 @@ iframe#iIndex{
 
 /* MEDIA QUERYS */
 
+@media screen and (max-width: 1600px){
+    .tienda-section{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .tienda-section{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
+
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
 
     header {
         flex-direction: column;
@@ -188,6 +201,11 @@ iframe#iIndex{
 }
 
 @media screen and (max-width: 992px) {
+
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
 
     header {
         flex-direction: column;
@@ -232,6 +250,11 @@ iframe#iIndex{
 
 @media screen and (max-width: 768px) {
 
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
+
     iframe#iIndex{
         margin-left: 0;
         width: 100%;
@@ -275,6 +298,11 @@ iframe#iIndex{
 
 @media screen and (max-width: 628px) {
 
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
+
     header {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -314,6 +342,11 @@ iframe#iIndex{
 }
 
 @media screen and (max-width: 535px) {
+
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
 
     header {
         flex-direction: column;
@@ -358,6 +391,11 @@ iframe#iIndex{
 
 @media screen and (max-width: 480px) {
 
+    .tienda-section{
+        width: 100%;
+        margin: 0;
+    }
+
     header {
         flex-direction: column;
         justify-content: center;
@@ -368,8 +406,11 @@ iframe#iIndex{
         display: none;
     }
 
-    .eTitulo h1 {
-        font-size: 1.4rem;
+    .eTitulo{
+        justify-content: center;
+        h1 {
+            font-size: 1.4rem;
+        }
     }
 
     .producto__imagen {
@@ -393,7 +434,13 @@ iframe#iIndex{
     }
 
     .hletra li a {
+        font-family: 'Roboto', sans-serif;
         font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .menu li {
+        margin-right: 0.8rem;
     }
 
     iframe#iIndex{
