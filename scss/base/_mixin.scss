@@ -1,0 +1,5 @@
+ @mixin bsfooter ($bg-negro, $borde, $colorletra) {
+    background-color: $bg-negro;
+    border: $borde;
+    color: $colorletra;
+ }

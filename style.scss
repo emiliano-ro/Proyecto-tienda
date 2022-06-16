@@ -1,11 +1,13 @@
+@import"./scss/base/variables";
 @import"./scss/base/extends";
 @import"./scss/base/mapas";
 @import"./scss/base/listas";
-@import"./scss/base/variables";
+@import"./scss/base/mixin";
 @import"./scss/componentes/index";
-@import "./scss/componentes/contacto";
-@import "./scss/componentes/micuenta";
-@import "./scss/componentes/tienda";
+@import"./scss/componentes/contacto";
+@import"./scss/componentes/micuenta";
+@import"./scss/componentes/tienda";
+
 
 /* !!! RESETS !!! */
 
@@ -18,7 +20,6 @@
 
 .logo {
     display: flex;
-    height: auto;
     flex-wrap: wrap;
     margin-left: 1.2rem;
 }
@@ -32,15 +33,15 @@
 }
 
 header{
-    background-color: $bg-negro;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    width: 100%;
-    height: 7rem;
+    background-color: map-get($header, bg-color);
+    padding-top: map-get($header, pad);
+    padding-bottom: map-get($header, pad);
+    width: map-get($header, ancho);
+    height: map-get($header, alto);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: map-get($header, centrar-elementos);
     border-bottom: 0.1rem solid white;
     box-sizing: unset;
     li {
@@ -114,28 +115,11 @@ div > a:hover > img.logoig{
 
 // FOOTER BS
 
-.footergeneral {
-    background-color: $bg-negro;
-    border-top: 1px solid white;
-    color: white;
+.footergeneral{
+    @include bsfooter($bg-negro, $borde, $colorletra);
 }
 
 // OTROS
-
-i#md {
-    display: none;
-}
-
-iframe#iIndex{
-    margin-left: calc(50% - 175px);
-    margin-left: -webkit-calc(50% - 175px);
-    margin-left: -moz-calc(50% - 175px);
-}
-
-iframe#iIndex{
-    margin-left: 0;
-    width: 100%;
-}
 
 
 .flxLinea {
@@ -192,10 +176,9 @@ iframe#iIndex{
     .producto__desc {
         width: 15.75rem;
     }
-
-    iframe#iIndex{
-        margin-left: 0;
-        width: 100%;
+    
+    .cLogin{
+        margin: 20% auto;
     }
 
 }
@@ -246,6 +229,10 @@ iframe#iIndex{
         flex-wrap: wrap-reverse;
     }
 
+    .cLogin{
+        margin: 30% auto;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -256,9 +243,9 @@ iframe#iIndex{
     }
 
     iframe#iIndex{
-        margin-left: 0;
-        width: 100%;
-    }
+        width: 290px;
+        height: 414px;
+    } 
 
     header {
         flex-direction: column;
@@ -292,6 +279,25 @@ iframe#iIndex{
     iframe#mapa{
         width: 451px;
         height: 338px;
+    }
+
+    .tNav{
+        display: none;
+    }
+
+    .mHam{
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.1rem solid white;
+        i{
+            margin: 1rem;
+            font-size: 2.5rem;
+            color: white;
+        }
+    }
+
+    .cLogin{
+        margin: 35% auto;
     }
 
 }
@@ -335,8 +341,27 @@ iframe#iIndex{
     }
 
     iframe#iIndex{
-        margin-left: 0;
-        width: 100%;
+        width: 240px;
+        height: 348px;
+    } 
+
+    .tNav{
+        display: none;
+    }
+
+    .mHam{
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.1rem solid white;
+        i{
+            margin: 1rem;
+            font-size: 2.2rem;
+            color: white;
+        }
+    }
+
+    .cLogin{
+        margin: 40% auto;
     }
 
 }
@@ -383,8 +408,23 @@ iframe#iIndex{
     }
 
     iframe#iIndex{
-        margin-left: 0;
-        width: 100%;
+        width: 220px;
+        height: 325px;
+    } 
+
+    .tNav{
+        display: none;
+    }
+
+    .mHam{
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.1rem solid white;
+        i{
+            margin: 1rem;
+            font-size: 2rem;
+            color: white;
+        }
     }
 
 }
@@ -444,9 +484,9 @@ iframe#iIndex{
     }
 
     iframe#iIndex{
-        margin-left: 0;
-        width: 100%;
-    }
+        width: 140px;
+        height: 225px;
+    } 
 
     iframe#mapa{
         width: 334px;
@@ -469,6 +509,28 @@ iframe#iIndex{
     
     .fcTamaño {
         width: 310px;
+    }
+
+    .iCaja {
+        border: 1px solid white;
+        padding: 0.712rem 0.525rem 0.525rem 0.525rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tNav{
+        display: none;
+    }
+
+    .mHam{
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.1rem solid white;
+        i{
+            margin: 1rem;
+            font-size: 1.7rem;
+            color: white;
+        }
     }
 
 }

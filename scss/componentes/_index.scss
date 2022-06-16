@@ -8,9 +8,7 @@
 }
 
 .index__flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @extend %flxwraprow;
     justify-content: space-around;
     width: 100%;
     height: fit-content;
