@@ -3,3 +3,20 @@
     border-top: $borde;
     color: $colorletra;
  }
+
+ @mixin prod-bordes-todos ($borde-sup-izq, $borde-sup-der, $borde-inf-izq, $borde-inf-der) {
+   border-top-left-radius: $borde-sup-izq;
+   border-top-right-radius: $borde-sup-der;
+   border-bottom-left-radius: $borde-inf-izq;
+   border-bottom-right-radius: $borde-inf-der;
+ }
+
+ @mixin prod-bordes-bot ($borde-inf-izq, $borde-inf-der) {
+   border-bottom-left-radius: $borde-inf-izq;
+   border-bottom-right-radius: $borde-inf-der;
+ }
+
+ @mixin prod-bordes-top ($borde-sup-izq, $borde-sup-der) {
+   border-top-left-radius: $borde-sup-izq;
+   border-top-right-radius: $borde-sup-der;
+ }

@@ -79,14 +79,16 @@
 .producto {
     margin: 0.5rem;
     background-color: rgba(255, 255, 255, 0.342);
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.404);
     width: fit-content;
     height: fit-content;
     padding: 5px;
+    @include prod-bordes-todos ($borde-sup-izq, $borde-sup-der, $borde-inf-izq, $borde-inf-der);
 }
 
 .producto__imagen {
     display: flex;
+    @include prod-bordes-top ($borde-sup-izq, $borde-sup-der);
 }
 
 .producto__desc {
@@ -94,6 +96,7 @@
     width: 18.75rem;
     height: fit-content;
     text-align: center;
+    @include prod-bordes-bot ($borde-inf-izq, $borde-inf-der)
 }
 
 .producto__titulo {

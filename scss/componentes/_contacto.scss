@@ -5,16 +5,8 @@
     margin-top: 20px;
     letter-spacing: 1px;
     color: white;
-    font-size: 2rem;
-    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
-}
-
-.principal {
-    display: block;
-    margin: 0 auto;
-    width: 510px;
-    color: #666666;
-    font-family: Arial;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fcTamaño {
@@ -25,13 +17,19 @@
 .fcTamInp input,
 textarea {
     width: 380px;
-    height: 27px;
-    background-color: #666666;
-    border: 2px solid #f6f6f6;
-    padding: 10px;
-    margin-top: 5px;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0.575);
+    border: 1px solid #f6f6f6;
+    padding: 1rem;
+    margin-top: 2px;
     font-size: 1rem;
     color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.msjarea{
+    padding-top: 0.5rem;
+    height: 7rem;
 }
 
 .fcTexto {
@@ -49,17 +47,18 @@ textarea {
 .cCaja {
     height: fit-content;
     width: max-content;
-    background-color: rgba(255, 255, 255, 0.164);
+    background-color: rgba(0, 0, 0, 0.575);
     border: 1px solid white;
     padding: 1rem;
     margin: 2rem;
+    @include prod-bordes-todos ($borde-sup-izq, $borde-sup-der, $borde-inf-izq, $borde-inf-der);
 }
 
 .cTexto {
+    font-family: 'Roboto', sans-serif;
     margin: 1rem 0 1rem 0;
     font-size: 2rem;
     color: white;
     word-spacing: 1rem;
     text-align: left;
-    text-shadow: 0 0 12px #0294f5c5, 0 0 14px #0dbff598, 0 0 16px #05a5fb96, 0 0 18px #2df9fd98;
 }

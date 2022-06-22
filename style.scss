@@ -52,6 +52,8 @@ header{
             font-family: 'Courier New', Courier, monospace;
             font-size: 1.2rem;
             letter-spacing: 0.2rem;
+        }:hover{
+            color: red;
         }
     }
  }
@@ -115,8 +117,13 @@ div > a:hover > img.logoig{
 
 // FOOTER BS
 
+
 .footergeneral{
     @include bsfooter($bg-negro, $borde, $colorletra);
+}
+
+.contacto_item{
+    @extend %flxwraprow;
 }
 
 // OTROS
@@ -132,6 +139,7 @@ div > a:hover > img.logoig{
     display: flex;
     flex-direction: column;
 }
+
 
 /* MEDIA QUERYS */
 
@@ -185,6 +193,10 @@ div > a:hover > img.logoig{
 
 @media screen and (max-width: 992px) {
 
+    .logo-footer-768{
+        display: none;
+    }
+
     .tienda-section{
         width: 100%;
         margin: 0;
@@ -236,6 +248,15 @@ div > a:hover > img.logoig{
 }
 
 @media screen and (max-width: 768px) {
+
+    .logo-footer-768{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto_item{
+        justify-content: center;
+    }
 
     .tienda-section{
         width: 100%;

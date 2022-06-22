@@ -1,10 +1,11 @@
 .iCaja {
     margin: 0.5rem;
     background-color: rgba(255, 255, 255, 0.342);
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 1.12rem 0.625rem 0.625rem 0.625rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    @include prod-bordes-todos ($borde-sup-izq, $borde-sup-der, $borde-inf-izq, $borde-inf-der);
 }
 
 .index__flex {

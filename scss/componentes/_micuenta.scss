@@ -5,10 +5,11 @@
 }
 
 .login__formato {
-    border: 3px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
     width: fit-content;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.575);
+    @include prod-bordes-todos ($borde-sup-izq, $borde-sup-der, $borde-inf-izq, $borde-inf-der);
 }
 
 .login__input input[type=text],
